@@ -1,0 +1,36 @@
+span {
+  color: #2befcc;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2bd0b2;
+  opacity: 70%;
+  transition: width 0.25s ease-in-out;
+}
+
+span:hover::before {
+  width: 100%;
+}
+
+#projectimg {
+  min-height: 60px;
+  max-height: 300px;
+}
+
+img {
+  max-height: 70px;
+  min-height: 30px;
+  max-width: 70px;
+  min-width: 30px;
+  margin-bottom: 12px;
+}
