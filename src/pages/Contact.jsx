@@ -46,6 +46,8 @@ export default function Contact() {
         }
       );
       toast.success("message sent to Haneesh");
+      setSender("");
+      setmsg("");
     } catch (error) {
       toast.error("Error sending message, Please Try again later");
       console.error(error);
@@ -67,6 +69,7 @@ export default function Contact() {
         className="my-3 p-2 resize-none text-lg outline-none rounded-md opacity-50 border-slate-400 border md:w-[600px] bg-opacity-10 bg-[#2e3154] w-full"
         onChange={(e) => setSender(e.target.value)}
         required
+        value={sender}
       />
       <textarea
         type="text"
@@ -74,6 +77,7 @@ export default function Contact() {
         onChange={(e) => {
           setmsg(e.target.value);
         }}
+        value={msg}
         required
         placeholder="Send a message."
       />
