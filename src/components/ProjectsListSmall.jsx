@@ -89,12 +89,14 @@ export default function ProjectsListSmall({ page, list }) {
                     Live Demo
                   </a>
                 ) : null}{" "}
-                <a
-                  href={e.git}
-                  className="flex justify-center items-center text-white w-24 py-1 rounded-lg bg-gray-600"
-                >
-                  GitHub
-                </a>
+                {e.git ? (
+                  <a
+                    href={e.git}
+                    className="flex justify-center items-center text-white w-24 py-1 rounded-lg bg-gray-600"
+                  >
+                    GitHub
+                  </a>
+                ) : null}
               </div>
             </li>
           ))}
