@@ -42,13 +42,15 @@ export default function ProjectsContent({ currentProject, list }) {
             Live Demo
           </a>
         ) : null}
-        <a
-          href={currentProject.git}
-          target="_blank"
-          className="bg-gray-600 px-2 w-24 text-center py-1 rounded-md transtion duration-200 ease-in-out hover:bg-gray-200 hover:text-black flex justify-center items-center"
-        >
-          GitHub
-        </a>
+        {currentProject.git ? (
+          <a
+            href={currentProject.git}
+            target="_blank"
+            className="bg-gray-600 px-2 w-24 text-center py-1 rounded-md transtion duration-200 ease-in-out hover:bg-gray-200 hover:text-black flex justify-center items-center"
+          >
+            GitHub
+          </a>
+        ) : null}
       </div>
     </div>
   );
