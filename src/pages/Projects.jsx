@@ -74,14 +74,14 @@ export default function Projects({ isSmallScreen }) {
         media: textem,
         content:
           "An ongoing Project, Chatting app from scratch which uses an sqlite database and socket.io functionalities fully. This project made me realize how big and complicated a Big-scale project can become. ive been try to contribute to it whenever i can. and so far is the progress. Check out my git repo for the code review",
-        git: "",
+        git: "https://github.com/HaneeshSai/TextEm-Chat-app",
       },
       {
         name: "Fami - a Music App",
         media: fami,
         content:
           "Another ongoing Project, Fami is a spotify based music app which lets you connect to your spotify account and use your playlists and trending songs. Ive designed the UI for the app and started working on but then i had to stop the progress because the spotify-web-playback is only available for the Premium users. I shall soon continue to work on it",
-        git: "",
+        git: "https://github.com/HaneeshSai/Fami-Spotify-app",
       },
     ],
     game: [
@@ -90,14 +90,12 @@ export default function Projects({ isSmallScreen }) {
         media: platform,
         content:
           "This is my first ever game i have made in the unity game engine when i was still learning and understanding the basics of Game development, i learned about sprites and spritesheets, how the animations work, and how Unity's monobehaviour classes work. This game basically taught me everything about the game development",
-        git: "",
       },
       {
         name: "Space Ball Shooter",
         media: spaceball,
         content:
           "This is one of my first ever game made in Unity with an advance AI system for enemies which always lurk in a maze and follow the player only if the player is at a certain distance away from the enemy position. I had alot of fun while making this",
-        git: "",
       },
       {
         name: "Fps Shooter Asset",
@@ -110,7 +108,6 @@ export default function Projects({ isSmallScreen }) {
         media: chef,
         content:
           "A top down pixel art game, where a chef grows his crops and starts his restaurent, He also has to fight monsters whenever their is a raid on the chef's village, i had help from a friend for the art work and implemented all the game mechanics in Unity",
-        git: "",
       },
     ],
     discord: [
@@ -119,7 +116,7 @@ export default function Projects({ isSmallScreen }) {
         media: bochi,
         content:
           "A custom Discord bot with over 40 unique commands. It can do a lot of things like managing the economy, keeping things civil, allowing for imaginative role-playing, offering fun games, and helping users keep track of their stuff. I used two different types of databases, MongoDB and SQLite, depending on what each command needed. This bot combines all the features from multiple other bots, and in the process, I learned a lot about how databases work.",
-        git: "",
+        git: "https://github.com/HaneeshSai/Bochi-Discord-bot",
       },
     ],
   };
