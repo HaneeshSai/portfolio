@@ -6,6 +6,7 @@ import AboutmePage from "./pages/AboutmePage";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import { Toaster } from "react-hot-toast";
 
 export default function App() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 640);
@@ -34,6 +35,7 @@ export default function App() {
 
   return (
     <div className="snap-y snap-mandatory w-screen">
+      <Toaster />
       <NavBar isSmallScreen={isSmallScreen} nav={scrollToTarget} />
       <div className="flex w-screen justify-center">
         <Homepage isSmallScreen={isSmallScreen} nav={scrollToTarget} />
